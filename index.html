@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activities Page</title>
+    <!-- Link your CSS file here -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Explore Activities</h1>
+
+        <div>
+            <label for="category">Select Category:</label>
+            <select id="categorySelect">
+                <option value="select">Select one</option>
+                <!-- Options will be dynamically added here using JavaScript -->
+            </select>
+        </div>
+
+        <div>
+            <label for="activity">Select Activity:</label>
+            <select id="activitiesSelect">
+                <option value="select">Select one</option>
+                <!-- Options will be dynamically added here using JavaScript -->
+            </select>
+        </div>
+
+        <div id="activity-details">
+            <!-- Activity details will be displayed here using JavaScript -->
+        </div>
+
+        <div id="ticket-form">
+            <h2>Buy E-Tickets</h2>
+            <form id="purchase-form">
+                <label for="ticket-quantity">Number of Tickets:</label>
+                <input type="number" id="ticket-quantity" required>
+                <label for="credit-card">Credit Card Number:</label>
+                <input type="text" id="credit-card" required>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" required>
+                <button type="submit">Purchase</button>
+                <button type="reset" id="btn">Reset</button>
+            </form>
+        </div>
+
+        <div id="confirmation-message">
+            <!-- Purchase confirmation message will be displayed here using JavaScript -->
+        </div>
+    </div>
+
+    <!-- Link your JavaScript file here -->
+    <script src="script.js"></script>
+    <script src="scripts/activity.js"></script>
+    <script src="scripts/hiking.js"></script>
+</body>
+
+</html>
+
